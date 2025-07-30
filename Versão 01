@@ -1,0 +1,22 @@
+using System;
+
+class Sorteador {
+    static void Main() {
+        Console.WriteLine("Bem-vindo à calculadora que calcula a Equação Geral de Max Plank!");
+
+        Console.Write("\nDigite a constante de planck (j.s): ");
+        string entradaPlanck = Console.ReadLine();
+
+        Console.Write("\nDigite a frequência da onda: ");
+        string entradaOnda = Console.ReadLine();
+
+        // Converte as entradas para double
+        double h = double.Parse(entradaPlanck);
+        double v = double.Parse(entradaOnda);
+
+        // Calcula E = m * c²
+        double e = h * v;
+
+        Console.WriteLine("\n A energia é: " + e + " joules");
+    }
+}
